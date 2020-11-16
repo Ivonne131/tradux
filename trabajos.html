@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>FINAL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+			<div id="header">
+				<header style="position: absolute; width: 100%; text-align: center; margin-top: 20px;">
+					<h1 style="margin: 0"><b>Nuevo trabajo</b></h1>
+				</header>
+				<div style="display: flex;">
+					<div style="width: 50%;">
+						<img src="./images/Logo_empresa.jpeg" style="width: 95px; margin-left: 15%; box-shadow: 0px 0px 61px 19px rgba(0,0,0,0.75); border-radius: 50px; cursor: pointer;">
+					</div>
+					<div style="width: 50%; text-align: end;">
+						<img src="./images/Logo_sw.jpeg" style="width: 95px; margin-right: 15%; box-shadow: 0px 0px 61px 19px rgba(0,0,0,0.75); border-radius: 50px; cursor: pointer;">
+					</div>
+				</div>
+			</div>
+			<!-- Nav -->
+			<nav id="nav" style="z-index: 999; height: 73px;">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="nosotros.html">Nosotros</a></li>
+					<li><a href="plantilla.html">Plantilla</a></li>
+					<li><a href="#">Trabajos</a></li>
+					<li><a href="index.html">Salir</a></li>
+				</ul>
+			</nav>
+		
+		</div>
+		<div class="centrado">
+			<div class="accordion" id="accordionExample">
+				<div class="card">
+					<div class="card-header" id="headingTwo">
+						<h2 class="mb-0">
+							<button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="margin: auto; outline: none !important; box-shadow: none;">
+								<div style="text-align: center;"><i href="#" class="fa fa-file-word-o" style="padding-right: 6px; font-family: FontAwesome;"></i> Agregar nuevo trabajo</div>
+							</button>
+						</h2>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+						<div class="card-body">
+							<form class="needs-validation" novalidate>
+								<div class="form-row">
+									<div class="col-md-2 mb-3"></div>
+									<div class="col-md-4 mb-3">
+										<label for="tipo">Seleccione el tipo de trabajo:</label>
+										<div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="tipo" id="gridRadios1" value="option1" checked>
+												<label class="form-check-label" for="gridRadios1" style="cursor: pointer;">- Trabajo Académico</label>
+											</div>
+											<div class="form-check">
+												<input class="form-check-input" type="radio" name="tipo" id="gridRadios2" value="option2">
+												<label class="form-check-label" for="gridRadios2" style="cursor: pointer;">- Trabajo Científico</label>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 mb-3">
+										<label for="idioma">Idioma a traducir:</label>
+										<select class="custom-select mr-sm-2" id="idioma">
+											<option selected disabled>Elige un idioma</option>
+											<option value="1">Alemán</option>
+											<option value="2">Inglés</option>
+											<option value="3">Francés</option>
+											<option value="4">Japonés</option>
+											<option value="5">Italiano</option>
+											<option value="6">Chino mandarín</option>
+										</select>
+									</div>
+									<div class="col-md-2 mb-3"></div>
+								</div>
+								<br>
+								<div class="form-row">
+									<div class="col-md-6 mb-3">
+										<label for="tema">Tema central:</label>
+										<input type="text" class="form-control" id="tema" required>
+										<div class="valid-tooltip">Looks good!</div>
+									</div>
+									<div class="col-md-6 mb-3">
+										<label for="archivo">Seleccionar archivo:</label>
+										<div class="custom-file">
+											<input type="file" name="customFileLang" id="customFileLang" style="outline: none !important;">
+										</div>
+									</div>
+								</div>
+								<br>
+								<div class="form-row">
+									<div class="col-md-4 mb-3">
+										<div class="form-group">
+											<label for="feLim">Fecha límite:</label>
+											<input type="date" class="form-control" id="feLim">
+										</div>
+									</div>
+									<div class="col-md-2 mb-3">
+										<label for="money">Monto estimado:</label>
+										<input type="text" id="money" class="form-control" placeholder="$ 1,300.00" disabled>
+									</div>
+									<div class="col-md-4 mb-3">
+										<label for="tarjeta">Número Tarjeta:</label>
+										<input type="text" id="tarjeta" class="form-control" placeholder="****-****-****-5678" disabled>
+									</div>
+									<div class=" mb-2">
+										<div class="custom-control custom-switch">
+											<br>
+											<input type="checkbox" class="custom-control-input" id="customSwitch1">
+											<label class="custom-control-label" for="customSwitch1">Confirmar tarjeta</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group text-center">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+										<label class="form-check-label" for="invalidCheck2">
+											Estoy de acuerdo con los <a href="./assets/POLITICAS_TERMINOS_Y_CONDICIONES._TRADUX.pdf" target="_blank" style="text-decoration: none;">términos y condiciones</a>.
+										</label>
+									</div>
+								</div>
+								<div class="text-center">
+									<button style="box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75); background-color: rgb(201, 201, 201);" type="submit">Enviar trabajo</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<div class="text-center">
+				<h3>Trabajos anteriores</h3>
+			</div>
+			<table class="table table-hover">
+				<thead class="thead-light" style="text-align: center;">
+					<tr>
+						<th>Fecha</th>
+						<th>Tipo</th>
+						<th>Tema</th>
+						<th>Idioma</th>
+						<th>Traducción</th>
+					</tr>
+				</thead>
+				<tbody style="text-align: center;">
+					<tr>
+						<td>30/05/2020</td>
+						<td>Estudiantil</td>
+						<td>La importancia de llamarse Ernesto</td>
+						<td>Inglés</td>
+						<td> <a href="#"> <i href="#" class="fa fa-download" style="font-family: FontAwesome;"></i></a> </td>
+					</tr>
+					<tr>
+						<td>14/07/2019</td>
+						<td>Científico</td>
+						<td>Tesis</td>
+						<td>Inglés</td>
+						<td> <a href="#"> <i href="#" class="fa fa-download" style="font-family: FontAwesome;"></i></a> </td>
+					</tr>
+					<tr>
+						<td>25/08/2018</td>
+						<td>Estudiantil</td>
+						<td>La administración en mi fin de semana</td>
+						<td>Francés</td>
+						<td> <a href="#"> <i href="#" class="fa fa-download" style="font-family: FontAwesome;"></i></a> </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<div class="flex">
+					<div class="copyright">
+						&copy; Copyright 2020. Facultad de Contaduría y Administración | Universidad Autónoma de San Luis Potosí
+					</div>
+					<div class="copyright" style="display: flex; width: 160px;">
+						<i href="#" class="icon fa-facebook" style="padding-right: 6px;"></i>
+						<i href="#" class="icon fa-twitter" style="padding: 0 6px 0 6px;"></i>
+						<i href="#" class="icon fa-linkedin" style="padding-left: 6px;"></i>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<!-- jQuery and JS bundle w/ Popper.js -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	</body>
+</html>
